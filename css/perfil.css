@@ -1,0 +1,250 @@
+/* Estilos existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-username {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h2 {
+    margin: 15px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-info p {
+    text-align: justify;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #555;
+}
+
+.profile-details {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.profile-details li {
+    margin-bottom: 5px;
+}
+
+.profile-footer {
+    margin-top: 20px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+}
+
+.nome,
+.foto-de-perfil,
+.sobre-mim,
+.senha {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.nome {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: none;
+}
+
+.senha {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nome:hover,
+.foto-de-perfil:hover,
+.sobre-mim:hover,
+.senha:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.modal-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-senha label,
+.form-nome label,
+.form-foto label,
+.form-foto input,
+.form-sobre label {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.form-senha input,
+.form-nome input,
+.form-sobre textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-nome p,
+.form-sobre p {
+    color: red;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#concluir,
+#concluir-nome,
+#concluir-foto,
+#concluir-sobre,
+#concluir-senha {
+    background-color: #268d00;
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#concluir:hover,
+#concluir-nome:hover,
+#concluir-foto:hover,
+#concluir-sobre:hover,
+#concluir-senha:hover {
+    color: rgb(82, 82, 82);
+    transition: .5s;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+.form-sobre textarea {
+    height: 100px;
+    resize: none;
+}
